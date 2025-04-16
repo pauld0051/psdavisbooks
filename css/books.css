@@ -1,0 +1,125 @@
+
+
+main {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 2rem;
+    background-color: #111;
+    padding: 2rem;
+    border-radius: 6px;
+    margin-top: 2rem;
+    border: 1px solid #333;
+}
+
+.intro-cover {
+    flex: 0 0 auto;
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    border: 2px solid #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.intro p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    flex: 1 1 400px;
+}
+
+.intro p strong {
+    font-size: 1.2rem;
+    color: #ddd;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.intro em {
+    color: #ccc;
+    font-style: italic;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 0.25rem;
+}
+
+.hero p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.intro-text {
+    flex: 1 1 600px;
+    min-width: 280px;
+}
+
+.intro-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    flex: 0 0 320px;
+}
+
+
+.intro-text p {
+    font-size: 1.1rem;
+    margin-bottom: 1.25rem;
+    color: #ddd;
+}
+
+.intro-text p strong {
+    display: block;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.book-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+
+.buy-button {
+    background-color: #2cbf5b;
+    color: #000;
+    font-weight: bold;
+    padding: 0.6rem 1.4rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #25a74f;
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.social-icons a {
+    font-size: 1.4rem;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #2cbf5b;
+}

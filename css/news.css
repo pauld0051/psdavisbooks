@@ -1,0 +1,134 @@
+main {
+    padding: 2rem 1rem;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.news-section {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.news-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.news-entry {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.news-entry h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #d4af37;
+}
+
+.news-entry p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.news-entry a {
+    color: #d4af37;
+    text-decoration: underline;
+}
+
+.contact-section {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.contact-entry {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.contact-entry h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #d4af37;
+}
+
+.contact-entry p,
+.contact-highlight p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.contact-highlight {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+}
+
+.contact-highlight a {
+    color: #d4af37;
+    text-decoration: underline;
+}
+
+.about-section {
+    margin-top: 3rem;
+    padding: 1rem;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.about-photo img {
+    max-width: 250px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    margin-top: 8px;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #d4af37;
+    margin-top: 0;
+}
+
+.about-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.about-photo {
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+
+    .about-photo,
+    .about-text {
+        align-self: flex-start;
+    }
+}

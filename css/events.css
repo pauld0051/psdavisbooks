@@ -1,0 +1,63 @@
+main {
+    padding: 2rem 1rem;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.countdown-wrapper {
+    margin: 3rem auto;
+    text-align: center;
+    color: #d4af37;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.countdown-segment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 80px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.countdown-segment span {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.countdown-segment label {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+@media screen and (max-width: 768px) {
+    #countdown {
+        gap: 1rem;
+        font-size: 1.25rem;
+    }
+
+    .countdown-segment {
+        width: 60px;
+        padding: 0.75rem;
+    }
+
+    .countdown-segment span {
+        font-size: 1.75rem;
+    }
+
+    .countdown-segment label {
+        font-size: 0.75rem;
+    }
+}

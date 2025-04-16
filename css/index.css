@@ -1,0 +1,206 @@
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/fire-texture.png') no-repeat center center;
+    background-size: cover;
+    padding: 0;
+    margin-top: -2.5rem;
+}
+
+.carousel {
+    position: relative;
+    width: 88%;
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2.5rem;
+    min-width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    box-sizing: border-box;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(30, 0, 0, 0.8)),
+        url('../images/fire-texture.png') center center / cover no-repeat;
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+.carousel-caption {
+    flex: 1;
+    color: #fff;
+    text-align: left;
+    max-width: 500px;
+    padding: 1rem 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.carousel-caption {
+    flex: 1;
+    color: #fff;
+    text-align: left;
+    max-width: 500px;
+    padding: 1rem 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.carousel-caption h3 {
+    margin: 0.5rem 0 0.25rem;
+    font-size: 1.2rem;
+}
+
+.carousel-caption p {
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+    z-index: 1;
+}
+
+.carousel-btn.left {
+    left: 10px;
+}
+
+.carousel-btn.right {
+    right: 10px;
+}
+
+.carousel-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.carousel-btn-primary {
+    display: inline-block;
+    background-color: #1db954;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.carousel-btn-primary:hover {
+    background-color: #17a44b;
+}
+
+.carousel-slide {
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.carousel-item a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.carousel-item a img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Desktop layout */
+@media screen and (min-width: 768px) {
+    .carousel-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .carousel-item img {
+        max-width: 300px;
+        height: auto;
+    }
+
+    .carousel-caption {
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 6px;
+        padding: 1rem 1.5rem;
+        text-align: left;
+        max-width: 500px;
+    }
+
+    .carousel-caption h3 {
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Mobile layout */
+@media screen and (max-width: 767px) {
+    .carousel-item {
+        flex: 0 0 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0;
+        text-align: center;
+        /* NEW: ensures inline content like <a> centers */
+    }
+
+    .carousel-item a {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+
+    .carousel-item a img {
+        width: 80%;
+        max-width: 280px;
+        height: auto;
+        object-fit: contain;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .carousel-caption {
+        display: none;
+    }
+
+    .carousel-btn {
+        display: block;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
