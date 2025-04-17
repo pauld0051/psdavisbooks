@@ -22,6 +22,21 @@ body {
     overflow-x: hidden;
 }
 
+p {
+    font-size: 1.25rem;
+    /* A step above default, approx. 18px */
+    line-height: 1.7;
+    /* Improves vertical rhythm */
+    color: #ddd;
+    /* A soft white for dark backgrounds */
+    letter-spacing: 0.2px;
+    /* Slightly refined spacing */
+    margin-bottom: 1.5rem;
+    /* Breathable spacing between paragraphs */
+    font-family: 'EB Garamond', serif;
+    /* Literary serif tone (or your primary font) */
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;

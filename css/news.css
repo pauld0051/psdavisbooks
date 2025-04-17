@@ -30,13 +30,26 @@ main {
 }
 
 .news-entry p {
-    font-size: 1rem;
-    line-height: 1.6;
+    flex: 1;
+    min-width: 280px;
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: #ddd;
+    letter-spacing: 0.2px;
+    margin-bottom: 1.5rem;
+    font-family: 'EB Garamond', serif;
 }
 
 .news-entry a {
     color: #d4af37;
     text-decoration: underline;
+}
+
+.news-container {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 }
 
 .contact-section {
@@ -65,8 +78,14 @@ main {
 
 .contact-entry p,
 .contact-highlight p {
-    font-size: 1rem;
-    line-height: 1.6;
+    flex: 1;
+    min-width: 280px;
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: #ddd;
+    letter-spacing: 0.2px;
+    margin-bottom: 1.5rem;
+    font-family: 'EB Garamond', serif;
 }
 
 .contact-highlight {
@@ -108,6 +127,14 @@ main {
 .about-text {
     flex: 1;
     min-width: 280px;
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: #ddd;
+    letter-spacing: 0.2px;
+    margin-bottom: 1.5rem;
+    font-family: 'EB Garamond', serif;
+}
+
 }
 
 .about-text h2 {
