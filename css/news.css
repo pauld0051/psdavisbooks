@@ -91,6 +91,10 @@ main {
     gap: 2rem;
     align-items: flex-start;
     flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 }
 
 .about-photo img {
