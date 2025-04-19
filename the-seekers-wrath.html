@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/books.css">
+    <link rel="stylesheet" href="css/modal.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -98,6 +99,16 @@
 
                     <p>Interested in beta or ARC reading? Now’s your chance. Use the contact page or message via socials to request early
                         access. You might even receive a free paperback as thanks for your insight.</p>
+                    <div class="preview-button-container">
+                        <button class="preview-btn" id="openModalBtn">Sneak Preview</button>
+                    </div>
+                    <!-- Modal -->
+                    <div id="sneakModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close-btn" id="closeModalBtn">&times;</span>
+                            <img src="images/books/the-seekers-wrath/Deyra-(1).png" alt="Deyra Quote Preview" class="modal-image">
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
@@ -108,6 +119,7 @@
 
     <!-- JavaScript -->
     <script src="js/includes.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>
