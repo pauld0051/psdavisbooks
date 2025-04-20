@@ -172,6 +172,7 @@ main {
         background-color: rgba(20, 20, 20, 0.92);
         border-radius: 10px;
         box-shadow: 0 0 8px rgba(255, 100, 0, 0.2);
+        -webkit-backdrop-filter: blur(2px);
         backdrop-filter: blur(2px);
         max-width: 90vw;
         display: flex;
@@ -179,6 +180,7 @@ main {
         justify-content: space-between;
         min-height: 560px;
     }
+
 
     .product-card img {
         width: 100%;

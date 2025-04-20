@@ -121,3 +121,11 @@ main {
 .social-icons a:hover {
     color: #2cbf5b;
 }
+
+@media (max-width: 600px) {
+    .intro-cover {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
