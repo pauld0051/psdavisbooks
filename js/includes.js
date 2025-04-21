@@ -69,3 +69,30 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector(".newsletter-form");
+  if (!form) return;
+
+  form.addEventListener("submit", function (e) {
+    const emailInput = form.querySelector('input[type="email"]');
+    const consentCheckbox = form.querySelector('input[name="consent"]');
+
+    const email = emailInput.value.trim();
+    const consentGiven = consentCheckbox.checked;
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailPattern.test(email)) {
+      alert("Please enter a valid email address.");
+      e.preventDefault();
+      return;
+    }
+
+    if (!consentGiven) {
+      alert("You must agree to the privacy policy before subscribing.");
+      e.preventDefault();
+      return;
+    }
+  });
+});
