@@ -169,45 +169,49 @@
 /* Mobile layout */
 @media screen and (max-width: 767px) {
     .carousel-item {
-        flex: 0 0 100%;
+        flex: 0 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;
-        padding: 2rem 0;
+        padding-bottom: 3rem;
+        position: relative;
     }
 
     .carousel-item a {
-        display: flex;
-        justify-content: center;
+        display: block;
         width: 100%;
+        text-align: center;
     }
 
     .carousel-item a img {
-        width: 90%;
+        width: 80%;
         max-width: 300px;
         height: auto;
         object-fit: contain;
         border-radius: 6px;
-        cursor: pointer;
+        margin: 0 auto;
     }
 
     .carousel-caption {
+        position: relative;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        background: none;
         width: 100%;
-        margin-top: 0.75rem;
-        margin-bottom: 1.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
     .carousel-caption h3,
-    .carousel-caption p {
+    .carousel-caption p,
+    .carousel-caption .support-note {
         display: none;
     }
 
     .carousel-caption .carousel-btn-primary {
         display: inline-block;
+        margin-top: -2.2rem;
         padding: 0.6rem 1.4rem;
         font-size: 1rem;
         background-color: #22bb33;
@@ -217,8 +221,8 @@
         text-decoration: none;
         font-weight: bold;
         text-align: center;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
+        width: auto;
+        max-width: 80%;
     }
 
     .carousel-caption .carousel-btn-primary:hover {
@@ -226,11 +230,11 @@
     }
 
     .carousel-btn {
-        display: block;
         top: 50%;
         transform: translateY(-50%);
     }
 }
+
 
 /* Newsletter Styles */
 .homepage-newsletter-block {
