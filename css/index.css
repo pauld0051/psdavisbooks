@@ -171,11 +171,10 @@
     .carousel-item {
         flex: 0 0 100%;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        padding: 2rem 0;
         text-align: center;
-        /* NEW: ensures inline content like <a> centers */
+        padding: 2rem 0;
     }
 
     .carousel-item a {
@@ -184,10 +183,9 @@
         width: 100%;
     }
 
-
     .carousel-item a img {
-        width: 80%;
-        max-width: 280px;
+        width: 90%;
+        max-width: 300px;
         height: auto;
         object-fit: contain;
         border-radius: 6px;
@@ -195,7 +193,36 @@
     }
 
     .carousel-caption {
+        width: 100%;
+        margin-top: 0.75rem;
+        margin-bottom: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel-caption h3,
+    .carousel-caption p {
         display: none;
+    }
+
+    .carousel-caption .carousel-btn-primary {
+        display: inline-block;
+        padding: 0.6rem 1.4rem;
+        font-size: 1rem;
+        background-color: #22bb33;
+        color: #fff;
+        border-radius: 5px;
+        border: none;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .carousel-caption .carousel-btn-primary:hover {
+        background-color: #1a9c29;
     }
 
     .carousel-btn {
@@ -205,6 +232,7 @@
     }
 }
 
+/* Newsletter Styles */
 .homepage-newsletter-block {
     padding: 2rem 1rem;
     background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)),
@@ -271,7 +299,7 @@
     color: #f0c75e;
 }
 
-
+/* Newsletter on mobile */
 @media (max-width: 768px) {
     .newsletter-columns {
         flex-direction: column;

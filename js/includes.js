@@ -67,7 +67,6 @@ document.addEventListener("DOMContentLoaded", function () {
       emailIcon.setAttribute("target", "_blank");
     }
   }
-
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -95,4 +94,29 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
   });
+});
+
+var form = document.getElementById("form");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  fetch(form.action, {
+    method: "POST",
+    body: new FormData(form),
+  })
+    .then((response) => {
+      if (response.ok) {
+        // ✅ THIS is the key part: redirect manually
+        window.location.href = "thank-you.html";
+      } else {
+        throw new Error("Network response was not ok");
+      }
+    })
+    .catch((error) => {
+      console.error(
+        "There has been a problem with your fetch operation:",
+        error
+      );
+    });
 });
