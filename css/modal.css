@@ -64,3 +64,21 @@
 .preview-btn:hover {
     background-color: #b89c2c;
 }
+
+.modal-arrows {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.arrow {
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+}
+
+.arrow:hover {
+    color: #ffd700;
+}
