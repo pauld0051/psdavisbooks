@@ -76,8 +76,11 @@
     font-size: 2rem;
     color: #fff;
     cursor: pointer;
+    -webkit-user-select: none;
+    /* For Safari */
     user-select: none;
 }
+
 
 .arrow:hover {
     color: #ffd700;
