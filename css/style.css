@@ -505,3 +505,14 @@ nav ul li.dropdown {
 .page-not-found .buy-button:hover {
     background-color: #a82814;
 }
+
+/* Hidden SEO header */
+.visually-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    text-align: center;
+}
