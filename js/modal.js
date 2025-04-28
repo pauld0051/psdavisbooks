@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const images = [
     "images/books/the-seekers-wrath/Deyra-(1).png",
     "images/books/the-seekers-wrath/the-seekers-wrath(1).png",
+    "images/books/the-seekers-wrath/beach4.png",
   ];
   let currentIndex = 0;
 
