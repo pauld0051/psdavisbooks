@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "images/books/the-seekers-wrath/Deyra-(1).png",
     "images/books/the-seekers-wrath/the-seekers-wrath(1).png",
     "images/books/the-seekers-wrath/beach4.png",
+    "images/books/the-seekers-wrath/Paul Davis(Deyra1).jpg",
   ];
   let currentIndex = 0;
 
