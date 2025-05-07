@@ -76,10 +76,14 @@
 }
 
 .modal-arrows {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin-top: 1rem;
+    width: 100%;
 }
 
 .arrow {
@@ -89,6 +93,7 @@
     -webkit-user-select: none;
     /* For Safari */
     user-select: none;
+    transition: color 0.2s ease;
 }
 
 

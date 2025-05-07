@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
       `images/books/the-seekers-wrath/Deyra-(1).${ext1}`,
       `images/books/the-seekers-wrath/the-seekers-wrath(1).${ext1}`,
       `images/books/the-seekers-wrath/beach4.${ext1}`,
-      `images/books/the-seekers-wrath/Paul Davis(Deyra1).${ext2}`,
+      `images/books/the-seekers-wrath/Paul-Davis(Deyra1).${ext2}`,
     ];
 
     let currentIndex = 0;
