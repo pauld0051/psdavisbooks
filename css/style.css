@@ -295,6 +295,22 @@ nav ul li.dropdown {
     transform: scale(1.1);
 }
 
+/* Privacy Policy Link Styling */
+.privacy-policy {
+    color: #d6aa4c;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: #d6aa4c;
+    font-weight: 500;
+    transition: color 0.3s ease, text-decoration-color 0.3s ease;
+}
+
+.privacy-policy:hover,
+.privacy-policy:focus {
+    color: #f0d189;
+    text-decoration-color: #f0d189;
+}
+
 .nav-toggle {
     display: none;
     font-size: 1.8rem;
