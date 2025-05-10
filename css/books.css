@@ -122,6 +122,18 @@ main {
     color: #2cbf5b;
 }
 
+.hyperlink {
+    color: #d4af37;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.hyperlink:hover {
+    color: #f0c75e;
+}
+
 @media screen and (max-width: 600px) {
     .intro {
         flex-direction: column;

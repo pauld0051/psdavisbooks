@@ -272,9 +272,24 @@ nav ul li.dropdown {
     padding: 0.25rem;
 }
 
+.mail-icon {
+    color: #ccc;
+    margin-left: 1rem;
+    transition: color 0.3s ease;
+    padding-right: 1rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 0.25rem;
+}
+
 .social-icons a:hover {
     color: #d4af37;
     text-shadow: 0 0 5px rgba(212, 175, 55, 0.7);
+}
+
+.mail-icon:hover {
+    color: #d4af37;
+    text-shadow: 0 0 6px rgba(212, 175, 55, 0.8);
 }
 
 .footer-social-icons {
@@ -294,6 +309,13 @@ nav ul li.dropdown {
     color: #d4af37;
     transform: scale(1.1);
 }
+
+#email-icon-wrapper {
+    margin-left: 0.75rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 
 /* Privacy Policy Link Styling */
 .privacy-policy {
