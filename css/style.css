@@ -446,6 +446,15 @@ nav ul li.dropdown {
         width: 100%;
         display: block;
     }
+
+    .header-icons {
+        gap: 0.1rem;
+    }
+
+    .header-icons a {
+        margin-left: 0.1rem;
+        padding-right: 0.1rem;
+    }
 }
 
 .newsletter-signup {
