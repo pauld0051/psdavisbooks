@@ -139,15 +139,33 @@ main {
     color: #2cbf5b;
 }
 
-.retailer-icon {
+.retailer-icon-img {
     height: 1.4rem;
-    color: #ccc;
-    transition: color 0.3s ease;
     vertical-align: middle;
+    filter: brightness(0.9);
+    transition: filter 0.3s ease;
 }
 
-.retailer-icon:hover {
-    color: #2cbf5b;
+.retailer-icon-img:hover {
+    filter: brightness(1.2) sepia(1) hue-rotate(75deg) saturate(4);
+}
+
+.amazon-icon-tweak {
+    position: relative;
+    top: 2px;
+    /* Adjust this as needed */
+}
+
+.smashword-icon-tweak {
+    position: relative;
+    bottom: 1px;
+    /* Adjust this as needed */
+}
+
+.vivlio-tweak {
+    position: relative;
+    bottom: 1px;
+    /* Adjust until it lines up with Amazon and Apple */
 }
 
 .hyperlink {
