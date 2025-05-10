@@ -153,19 +153,21 @@ main {
 .amazon-icon-tweak {
     position: relative;
     top: 2px;
-    /* Adjust this as needed */
 }
 
 .smashword-icon-tweak {
     position: relative;
     bottom: 1px;
-    /* Adjust this as needed */
 }
 
 .vivlio-tweak {
     position: relative;
     bottom: 1px;
-    /* Adjust until it lines up with Amazon and Apple */
+}
+
+.kobo-tweak {
+    position: relative;
+    bottom: 2px;
 }
 
 .hyperlink {
