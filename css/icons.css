@@ -53,7 +53,9 @@
 
 .kobo-tweak {
     position: relative;
-    top: 9px;
+    top: 1px;
+    width: 1.8rem;
+    height: 1.8rem;
 }
 
 .smashwords-icon .icon {
