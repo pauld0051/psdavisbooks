@@ -46,6 +46,16 @@
     /* Adjust as needed */
 }
 
+.kobo-icon .icon {
+    -webkit-mask-image: url('/images/icons/KoboApp.svg');
+    mask-image: url('/images/icons/KoboApp.svg');
+}
+
+.kobo-tweak {
+    position: relative;
+    top: 9px;
+}
+
 .smashwords-icon .icon {
     -webkit-mask-image: url('/images/icons/smashwords-icon-filled-256.svg');
     mask-image: url('/images/icons/smashwords-icon-filled-256.svg');
