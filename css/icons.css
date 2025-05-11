@@ -42,7 +42,7 @@
 
 .bn-tweak {
     position: relative;
-    top: 9px;
+    top: 7px;
 }
 
 .kobo-icon .icon {
@@ -52,7 +52,7 @@
 
 .kobo-tweak {
     position: relative;
-    top: 9px;
+    top: 7px;
 }
 
 .smashwords-icon .icon {
@@ -62,7 +62,7 @@
 
 .smashwords-tweak {
     position: relative;
-    top: 9px;
+    top: 7px;
 }
 
 .vivlio-icon .icon {
@@ -72,6 +72,6 @@
 
 .vivlio-tweak {
     position: relative;
-    top: 9px;
+    top: 7px;
     /* Adjust as needed to match Amazon and Apple alignment */
 }
