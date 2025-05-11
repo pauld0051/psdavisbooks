@@ -50,6 +50,16 @@
     mask-image: url('/images/icons/KoboApp(1).svg');
 }
 
+.fable-icon .icon {
+    -webkit-mask-image: url('/images/icons/fable.svg');
+    mask-image: url('/images/icons/fable.svg');
+}
+
+.fable-tweak {
+    position: relative;
+    top: 7px;
+}
+
 .kobo-tweak {
     position: relative;
     top: 7px;
