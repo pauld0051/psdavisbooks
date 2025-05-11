@@ -1,0 +1,58 @@
+/* Shared link wrapper for all retailers */
+.retailer-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 1.4rem;
+    height: 1.4rem;
+    color: #ccc;
+    font-size: inherit;
+    transition: color 0.2s ease;
+}
+
+.retailer-icon:hover {
+    color: #fff;
+    /* example hover */
+}
+
+/* Generic icon span styling */
+.retailer-icon .icon {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: currentColor;
+
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+
+    -webkit-mask-position: center;
+    mask-position: center;
+
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+
+/* Individual platform icons */
+
+.smashwords-icon .icon {
+    -webkit-mask-image: url('/images/icons/smashwords-icon-filled-256.svg');
+    mask-image: url('/images/icons/smashwords-icon-filled-256.svg');
+}
+
+.smashwords-tweak {
+    position: relative;
+    top: 9px;
+}
+
+.vivlio-icon .icon {
+    -webkit-mask-image: url('/images/icons/icons8-vivlio-512.svg');
+    mask-image: url('/images/icons/icons8-vivlio-512.svg');
+}
+
+.vivlio-tweak {
+    position: relative;
+    top: 9px;
+    /* Adjust as needed to match Amazon and Apple alignment */
+}
