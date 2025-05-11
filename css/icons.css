@@ -35,6 +35,16 @@
 
 
 /* Individual platform icons */
+.bn-icon .icon {
+    -webkit-mask-image: url('/images/icons/B&N.svg');
+    mask-image: url('/images/icons/B&N.svg');
+}
+
+.bn-tweak {
+    position: relative;
+    top: 9px;
+    /* Adjust as needed */
+}
 
 .smashwords-icon .icon {
     -webkit-mask-image: url('/images/icons/smashwords-icon-filled-256.svg');
