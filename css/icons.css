@@ -43,7 +43,6 @@
 .bn-tweak {
     position: relative;
     top: 9px;
-    /* Adjust as needed */
 }
 
 .kobo-icon .icon {
@@ -53,9 +52,7 @@
 
 .kobo-tweak {
     position: relative;
-    top: 1px;
-    width: 1.8rem;
-    height: 1.8rem;
+    top: 9px;
 }
 
 .smashwords-icon .icon {
