@@ -36,8 +36,8 @@
 
 /* Individual platform icons */
 .bn-icon .icon {
-    -webkit-mask-image: url('/images/icons/B&N.svg');
-    mask-image: url('/images/icons/B&N.svg');
+    -webkit-mask-image: url('/images/icons/B&N(1).svg');
+    mask-image: url('/images/icons/B&N(1).svg');
 }
 
 .bn-tweak {
