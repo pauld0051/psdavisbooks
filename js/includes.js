@@ -109,11 +109,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const formData = new FormData(form);
 
-        const spinner = document.querySelector("#newsletter-spinner");
-        if (spinner) {
-          spinner.classList.remove("hidden");
+        const modalSpinner = document.querySelector("#newsletter-spinner");
+        if (modalSpinner) {
+          modalSpinner.classList.remove("hidden");
         }
 
+        const text = form.querySelector(".button-text");
+        const buttonSpinner = form.querySelector(".spinner-small");
+
+        if (text) text.style.opacity = "0";
+        if (buttonSpinner) buttonSpinner.classList.remove("hidden");
+        
         fetch(form.action, {
           method: "POST",
           mode: "no-cors",
