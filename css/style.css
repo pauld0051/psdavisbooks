@@ -595,3 +595,43 @@ nav ul li.dropdown {
     overflow: hidden;
     text-align: center;
 }
+
+/* Newsletter Modal */
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: #1e1e1e;
+    padding: 2rem;
+    max-width: 500px;
+    width: 90%;
+    color: #eee;
+    font-family: 'EB Garamond', serif;
+    border: 1px solid #666;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+    position: relative;
+    border-radius: 4px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #ccc;
+    cursor: pointer;
+}

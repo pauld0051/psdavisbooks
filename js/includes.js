@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         el.innerHTML = data;
         includeCount--;
 
-        // ✅ If this was the footer, update the year
+        // ✅ Update footer year
         if (file.includes("footer")) {
           const yearSpan = el.querySelector("#copyright-year");
           if (yearSpan) {
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         }
 
-        // ✅ After all includes are done, run setup
+        // ✅ When all includes are done
         if (includeCount === 0) {
           finalizeSetup();
         }
@@ -27,27 +27,25 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   function finalizeSetup() {
-    // FontAwesome fix
-    if (typeof FontAwesome !== "undefined") {
-      FontAwesome.dom.i2svg();
-    }
-
-    // Nav toggle setup
+    // ✅ Nav toggle
     const navToggle = document.getElementById("navToggle");
     const mainNav = document.getElementById("mainNav");
-
     if (navToggle && mainNav) {
       navToggle.addEventListener("click", function () {
         mainNav.classList.toggle("active");
       });
     }
 
-    // ✅ Email setup (after includes)
+    // ✅ FontAwesome fix
+    if (typeof FontAwesome !== "undefined") {
+      FontAwesome.dom.i2svg();
+    }
+
+    // ✅ Email injection
     const user = "psdavisbooks";
     const domain = "gmail.com";
     const email = `${user}@${domain}`;
 
-    // Text-based obfuscated email
     const emailText = document.getElementById("email");
     if (emailText) {
       emailText.innerHTML = `<a href="mailto:${email}">${user}(at)${domain.replace(
@@ -56,7 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
       )}</a>`;
     }
 
-    // Icon version
     const emailIcon = document.getElementById("email-icon-wrapper");
     if (emailIcon) {
       emailIcon.innerHTML = `<i class="fa-solid fa-envelope"></i>`;
@@ -66,57 +63,63 @@ document.addEventListener("DOMContentLoaded", function () {
       emailIcon.setAttribute("rel", "noopener noreferrer");
       emailIcon.setAttribute("target", "_blank");
     }
+
+    // ✅ Newsletter modal setup
+    const openBtn = document.getElementById("open-newsletter-modal");
+    const closeBtn = document.getElementById("close-newsletter-modal");
+    const modal = document.getElementById("newsletter-modal");
+
+    if (openBtn && closeBtn && modal) {
+      openBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        modal.classList.remove("hidden");
+      });
+
+      closeBtn.addEventListener("click", function () {
+        modal.classList.add("hidden");
+      });
+
+      window.addEventListener("click", function (e) {
+        if (e.target === modal) {
+          modal.classList.add("hidden");
+        }
+      });
+    }
+
+    // ✅ Newsletter form validation and redirect
+    const form = document.querySelector(".newsletter-form");
+    if (form) {
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const emailInput = form.querySelector('input[type="email"]');
+        const consentCheckbox = form.querySelector('input[name="consent"]');
+        const email = emailInput.value.trim();
+        const consentGiven = consentCheckbox.checked;
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!emailPattern.test(email)) {
+          alert("Please enter a valid email address.");
+          return;
+        }
+
+        if (!consentGiven) {
+          alert("You must agree to the privacy policy before subscribing.");
+          return;
+        }
+
+        const formData = new FormData(form);
+
+        fetch(form.action, {
+          method: "POST",
+          mode: "no-cors", // <- suppresses Google redirect
+          body: formData,
+        }).then(() => {
+          setTimeout(() => {
+            window.location.href = "thank-you.html";
+          }, 500);
+        });
+      });
+    }
   }
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.querySelector(".newsletter-form");
-  if (!form) return;
-
-  form.addEventListener("submit", function (e) {
-    const emailInput = form.querySelector('input[type="email"]');
-    const consentCheckbox = form.querySelector('input[name="consent"]');
-
-    const email = emailInput.value.trim();
-    const consentGiven = consentCheckbox.checked;
-
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    if (!emailPattern.test(email)) {
-      alert("Please enter a valid email address.");
-      e.preventDefault();
-      return;
-    }
-
-    if (!consentGiven) {
-      alert("You must agree to the privacy policy before subscribing.");
-      e.preventDefault();
-      return;
-    }
-  });
-});
-
-var form = document.getElementById("form");
-
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  fetch(form.action, {
-    method: "POST",
-    body: new FormData(form),
-  })
-    .then((response) => {
-      if (response.ok) {
-        // ✅ THIS is the key part: redirect manually
-        window.location.href = "thank-you.html";
-      } else {
-        throw new Error("Network response was not ok");
-      }
-    })
-    .catch((error) => {
-      console.error(
-        "There has been a problem with your fetch operation:",
-        error
-      );
-    });
 });
