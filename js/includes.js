@@ -87,8 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // ✅ Newsletter form validation and redirect
-    const form = document.querySelector(".newsletter-form");
-    if (form) {
+    document.querySelectorAll(".newsletter-form").forEach((form) => {
       form.addEventListener("submit", function (e) {
         e.preventDefault();
 
@@ -112,14 +111,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
         fetch(form.action, {
           method: "POST",
-          mode: "no-cors", // <- suppresses Google redirect
+          mode: "no-cors",
           body: formData,
         }).then(() => {
           setTimeout(() => {
             window.location.href = "thank-you.html";
-          }, 500);
+          }, 50);
         });
       });
-    }
+    });
   }
 });
