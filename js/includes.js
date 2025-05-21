@@ -109,6 +109,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const formData = new FormData(form);
 
+        const spinner = document.querySelector("#newsletter-spinner");
+        if (spinner) {
+          spinner.classList.remove("hidden");
+        }
+
         fetch(form.action, {
           method: "POST",
           mode: "no-cors",
@@ -116,9 +121,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }).then(() => {
           setTimeout(() => {
             window.location.href = "thank-you.html";
-          }, 50);
+          }, 500);
         });
       });
     });
-  }
-});
+  } // Close finalizeSetup
+}); // Close DOMContentLoaded
+// End of Newsletter Modal Script
