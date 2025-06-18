@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   function finalizeSetup() {
+    
     // ✅ Nav toggle
     const navToggle = document.getElementById("navToggle");
     const mainNav = document.getElementById("mainNav");
@@ -119,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (text) text.style.opacity = "0";
         if (buttonSpinner) buttonSpinner.classList.remove("hidden");
-        
+
         fetch(form.action, {
           method: "POST",
           mode: "no-cors",

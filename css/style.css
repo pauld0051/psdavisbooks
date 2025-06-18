@@ -713,3 +713,28 @@ nav ul li.dropdown {
 .spinner.hidden {
     display: none;
 }
+
+/* ✅ Scroll to Top Button Styles */
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s;
+    z-index: 1000;
+}
+
+.scroll-to-top img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.6));
+    cursor: pointer;
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
