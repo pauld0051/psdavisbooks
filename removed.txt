@@ -1,0 +1,20 @@
+Removed from index.html:
+<div class="carousel-item">
+                        <a href="https://www.amazon.com/dp/B0F386YJLG" target="_blank" rel="noopener noreferrer">
+                            <picture>
+                                <source srcset="images/books/Shadow-State/shadow_state.webp" type="image/webp">
+                                <source srcset="images/books/Shadow-State/shadow_state.png" type="image/png">
+                                <img src="images/books/Shadow-State/shadow_state.png" alt="Shadow State by J. D. Mercer" width="300" height="450">
+                            </picture>
+                        </a>
+                        <div class="carousel-caption">
+                            <h3>Shadow State</h3>
+                            <p>Private contractors control war, surveillance, and even elections—this book reveals how.</p>
+                            <p class="support-note">A piercing exposé from J. D. Mercer.</p>
+                            <a href="https://www.amazon.com/dp/B0F386YJLG" target="_blank" rel="noopener noreferrer"
+                                class="carousel-btn-primary">Buy on Amazon</a>
+                        </div>
+                    </div>
+
+Removed from header.html:
+<li><a href="shadow-state.html">Shadow State – J. D. Mercer</a></li>
