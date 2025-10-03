@@ -67,7 +67,7 @@ This site reflects my belief that art and writing should be experienced without 
 
 You’re welcome to reach out via email:
 
-**📧 <psdavisbooks@gmail.com>**
+**📧 <p.s.davis@psdavisbooks.com>**
 
 Whether you’re a reader, developer, or fellow writer, I’m happy to chat about the project, how the site was built, or anything else related to the writing or platform.
 

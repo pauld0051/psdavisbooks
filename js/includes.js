@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   function finalizeSetup() {
-    
     // ✅ Nav toggle
     const navToggle = document.getElementById("navToggle");
     const mainNav = document.getElementById("mainNav");
@@ -43,8 +42,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // ✅ Email injection
-    const user = "psdavisbooks";
-    const domain = "gmail.com";
+    const user = "p.s.davis";
+    const domain = "psdavisbooks.com";
     const email = `${user}@${domain}`;
 
     const emailText = document.getElementById("email");
