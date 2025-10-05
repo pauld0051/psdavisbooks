@@ -204,3 +204,39 @@ main {
         filter: brightness(1.05) saturate(1.15);
     }
 }
+
+/* Mobile background: scale correctly + softer intensity */
+@media (max-width: 768px) {
+
+    /* MAP (underlay) */
+    .wrapper::before {
+        background-size: cover;
+        /* no squish */
+        background-position: center 35%;
+        /* nudge up if header overlaps */
+        opacity: 0.16;
+        /* softer behind text */
+    }
+
+    /* LAVA + vignette (overlay) */
+    .wrapper::after {
+        background-size: 100% 100%, cover;
+        /* vignette fits, lava scales */
+        background-position: 50% 50%, center;
+        opacity: 0.26;
+        /* reduce punch on small screens */
+        animation: fireFlicker 5.5s ease-in-out infinite,
+            lavaBreathe 36s ease-in-out infinite;
+        /* calmer motion */
+        filter: brightness(1.02) saturate(1.15);
+        /* softer grade */
+    }
+}
+
+/* Ultra-small phones: drop motion entirely for clarity/battery */
+@media (max-width: 420px) {
+    .wrapper::after {
+        animation: none;
+        opacity: 0.24;
+    }
+}
