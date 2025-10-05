@@ -1,4 +1,12 @@
-
+/* ============================
+   Page layout (unchanged basics)
+   ============================ */
+html,
+body {
+    height: 100%;
+    background: #000;
+    /* safe fallback */
+}
 
 main {
     padding: 2rem 1rem;
@@ -7,6 +15,72 @@ main {
     margin: 0 auto;
 }
 
+/* ============================
+   FULL-PAGE BACKGROUND LAYERS
+   (map under, lava over, vignette on top)
+   ============================ */
+.wrapper {
+    position: relative;
+    /* create stacking context for pseudo elements */
+    z-index: 0;
+}
+
+/* MAP layer: sits at the very back, slightly faded */
+.wrapper::before {
+    content: "";
+    position: fixed;
+    /* covers the whole viewport for the whole page */
+    inset: 0;
+    z-index: -2;
+    background-image: url("../images/Teloshka_image.png");
+    /* oversize to get that full-bleed dramatic look */
+    background-size: 160% 160%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0.22;
+    /* adjust if you want more map showing */
+    pointer-events: none;
+}
+
+/* LAVA + vignette layer: above map, below all content */
+.wrapper::after {
+    content: "";
+    position: fixed;
+    /* covers entire viewport regardless of scroll */
+    inset: 0;
+    z-index: -1;
+
+    /* first background is the vignette, second is the lava texture */
+    background-image:
+        radial-gradient(120% 80% at 50% 40%,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.55) 60%,
+            rgba(0, 0, 0, 0.85) 100%),
+        url("../images/fire-texture.png");
+
+    /* vignette fits exactly, lava is oversized for bleed */
+    background-size: 100% 100%, 160% 160%;
+    background-position: 50% 50%, 0% 50%;
+    background-repeat: no-repeat, no-repeat;
+
+    opacity: 0.35;
+    /* overall lava strength */
+    filter: brightness(1.05) saturate(1.2);
+    /* warm punch */
+    pointer-events: none;
+
+    /* quick flicker plus slow breathing fade */
+    animation:
+        fireFlicker 3.6s ease-in-out infinite,
+        lavaBreathe 24s ease-in-out infinite;
+}
+
+/* Optional: if you want the background to scroll with the page instead of staying fixed,
+   change BOTH ::before and ::after from position: fixed to position: absolute. */
+
+/* ============================
+   Countdown component styling
+   ============================ */
 .countdown-wrapper {
     margin: 3rem auto;
     text-align: center;
@@ -26,11 +100,11 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.55);
     padding: 1rem;
     border-radius: 0.5rem;
     width: 80px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
 }
 
 .countdown-segment span {
@@ -44,6 +118,64 @@ main {
     color: #ccc;
 }
 
+/* ============================
+   Animations
+   ============================ */
+@keyframes fireFlicker {
+    0% {
+        filter: brightness(1.00) saturate(1.10);
+    }
+
+    12% {
+        filter: brightness(1.22) saturate(1.28);
+    }
+
+    25% {
+        filter: brightness(0.96) saturate(1.05);
+    }
+
+    42% {
+        filter: brightness(1.18) saturate(1.25);
+    }
+
+    58% {
+        filter: brightness(1.03) saturate(1.15);
+    }
+
+    74% {
+        filter: brightness(1.26) saturate(1.30);
+    }
+
+    100% {
+        filter: brightness(1.05) saturate(1.20);
+    }
+}
+
+@keyframes lavaBreathe {
+    0% {
+        opacity: 0.18;
+    }
+
+    25% {
+        opacity: 0.40;
+    }
+
+    50% {
+        opacity: 0.28;
+    }
+
+    75% {
+        opacity: 0.46;
+    }
+
+    100% {
+        opacity: 0.18;
+    }
+}
+
+/* ============================
+   Responsive tweaks
+   ============================ */
 @media screen and (max-width: 768px) {
     #countdown {
         gap: 1rem;
@@ -61,5 +193,14 @@ main {
 
     .countdown-segment label {
         font-size: 0.75rem;
+    }
+}
+
+/* Accessibility: respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .wrapper::after {
+        animation: none;
+        opacity: 0.28;
+        filter: brightness(1.05) saturate(1.15);
     }
 }
