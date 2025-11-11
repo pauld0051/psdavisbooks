@@ -1,94 +1,74 @@
 /* ===============================
-   P.S. Davis — Newsletter CSS
+   P. S. Davis — Newsletter CSS (web mirror of the email)
    =============================== */
 
-/* --- Page background --- */
+/* Page background (plain dark) */
+html,
 body {
-    position: relative;
-    background: #000 url('/images/fire-texture.png') center/cover no-repeat fixed;
+    height: 100%;
+}
+
+body {
     margin: 0;
-}
-
-/* overlay */
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.55);
-    /* 0.55 = 55% black tint */
-    z-index: -1;
-    /* sits behind content */
-}
-
-
-/* --- Readable content layer --- */
-main {
-    background: #ece5d9;
-    /* subtle parchment under card */
+    background: #111;
+    /* plain dark background */
     color: #111;
+    font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
 }
 
-/* --- Newsletter outer container (the white card) --- */
+/* White card container */
 .news-container {
     background: #fff;
     border: 1px solid #46382c;
-    max-width: 860px;
+    max-width: 880px;
     margin: 0 auto;
     padding: 24px 24px 28px;
     box-sizing: border-box;
 }
 
-/* --- Section blocks inside the card --- */
-.news-entry {
-    background: #f8f1e7;
-    /* light parchment for separation */
-    border: 1px solid #e2d6c7;
-    padding: 18px 20px;
-    margin: 14px 0;
-    opacity: 1 !important;
-    /* kill any inherited fades */
-}
-
-/* --- Typography defaults (hard overrides for clarity) --- */
-.news-container,
-.news-container * {
-    color: #111 !important;
-    text-shadow: none !important;
+/* Headings */
+.news-container h2,
+.news-container h3 {
+    text-align: center;
+    margin: 10px 0 8px;
+    font-weight: 700;
 }
 
 .news-container h2 {
-    margin: 4px 0 10px;
-    font-weight: 700;
-    text-align: center;
+    font-family: 'Cinzel Decorative', Georgia, 'Times New Roman', serif;
+    font-size: 2rem;
+    color: #2b2019;
 }
 
-.news-container h3 {
-    margin: 10px 0 8px;
-    font-weight: 700;
-    text-align: center;
+/* Sections */
+.news-entry {
+    background: #f8f1e7;
+    /* light parchment for default sections */
+    border: 1px solid #e2d6c7;
+    padding: 18px 20px;
+    margin: 14px 0;
 }
 
-.news-container p {
-    margin: 0.5rem 0;
-    line-height: 1.55;
+/* Dark variant for title panels (to match email) */
+.news-entry.dark {
+    background: #2a1c12;
+    border-color: #2a1c12;
+    color: #fff;
 }
 
-/* --- Links --- */
-.news-container a {
-    color: #0F5BA7 !important;
-    text-decoration: underline;
-    font-weight: 700;
+.news-entry.dark h3,
+.news-entry.dark p,
+.news-entry.dark a {
+    color: #fff;
 }
 
-/* --- Title images (white PNGs) need a dark band --- */
+/* Title image panel */
 .title-panel {
-    background: #2c1f18;
-    /* dark ember brown */
-    border: 1px solid #3b2b23;
-    padding: 10px 12px;
-    margin: 0 auto 10px;
-    max-width: 420px;
-    border-radius: 6px;
+    background: transparent;
+    /* the whole section is dark */
+    padding: 6px 0 10px;
+    max-width: 440px;
+    margin: 0 auto 6px;
 }
 
 .title-img {
@@ -100,29 +80,58 @@ main {
     filter: drop-shadow(0 1px 1px rgba(0, 0, 0, .6));
 }
 
-/* --- Stars (Unicode) — neutral, visible for colour-blind users --- */
-.stars {
-    font: 700 1.15rem/1 'EB Garamond', serif;
-    letter-spacing: 2px;
-    color: #444;
+/* Copy */
+.news-container p {
+    margin: 0.6rem 0;
+    line-height: 1.6;
 }
 
-/* --- Buttons row --- */
+/* Stars */
+.stars {
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #e0cda9;
+}
+
+/* Buttons */
 .cta-row {
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     justify-content: center;
+    margin-top: 8px;
 }
 
-.news-entry:not(:last-child) {
-    border-bottom: 1px solid #d8c6ad;
-    padding-bottom: 1.2rem;
-}
-
-.buy-button.newsletter-btn {
+.btn {
+    display: inline-block;
+    padding: 12px 16px;
+    border-radius: 4px;
+    background: #0F5BA7;
+    color: #fff !important;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.92rem;
+    line-height: 1;
     box-shadow: 0 1px 0 rgba(0, 0, 0, .25), 0 0 4px rgba(0, 0, 0, .15);
 }
 
-/* --- Callout box for ARC text --- */
+.btn:hover {
+    filter: brightness(1.05);
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+.btn-dark {
+    background: #222222;
+}
+
+.btn-green {
+    background: #2e7d32;
+}
+
+/* Callout */
 .callout {
     background: #efe4d2;
     border: 1px solid #d8c6ad;
@@ -130,23 +139,23 @@ main {
     border-radius: .5rem;
 }
 
-/* --- Utilities --- */
+/* Utility */
 .center {
     text-align: center;
 }
 
-/* --- Responsive niceties --- */
+/* Responsive */
 @media (max-width: 640px) {
     .news-container {
         padding: 18px;
     }
 
     .news-entry {
-        padding: 14px 16px;
+        padding: 16px;
     }
 
     .title-panel {
-        max-width: 90%;
+        max-width: 92%;
     }
 
     .title-img {

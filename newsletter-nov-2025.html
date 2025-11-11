@@ -48,67 +48,63 @@
         <div data-include="/includes/header.html"></div>
 
         <main>
-            <section class="news-container">
-                <h2 class="center">November Newsletter</h2>
+            <section class="news-container" aria-labelledby="nl-title">
+                <h2 id="nl-title" class="center">November Newsletter</h2>
 
-                <article class="news-entry center">
+                <!-- THE SEEKER’S WRATH -->
+                <article class="news-entry dark center" aria-labelledby="sw-heading">
                     <div class="title-panel">
-                    <img src="/images/books/the-seekers-wrath/SeekersWrathTitle.png" alt="THE SEEKER’S WRATH"
-                        class="title-img" />
+                        <img src="/images/books/the-seekers-wrath/SeekersWrathTitle.png" alt="THE SEEKER’S WRATH"
+                            class="title-img" />
                     </div>
-                    <h3>The Seeker’s Wrath turns five months old</h3>
+
+                    <h3 id="sw-heading">The Seeker’s Wrath turns five months old</h3>
                     <p>It’s been almost five months since <em>The Seeker’s Wrath</em> launched, and the response has
                         been incredible. Thank you to everyone who has read, reviewed, or shared the journey.</p>
 
                     <p class="stars" aria-hidden="true">★★★★★</p>
                     <p>‘I found myself drawn from page to page and relished every twist. I finished thinking, <em>I
-                            enjoyed that—I want more.</em>’</p>
+                            enjoyed that, I want more.</em>’</p>
                     <p>‘Davis writes with the precision of a strategist and the soul of a poet.’</p>
-                    <p>‘The female lead, Deyra, is an absolute warrior. I want to be her when I grow up.’</p>
                     <p>‘Not your average fantasy. Brutal, political, and deeply character-driven.’</p>
 
                     <p><strong>If you’ve finished the book and haven’t yet left a review, now is a great time.</strong>
                         Each review helps new readers discover the story and genuinely makes my day.</p>
 
-                <div class="cta-row center">
-                    <a class="buy-button" href="https://www.goodreads.com/book/show/233662729-the-seeker-s-wrath" target="_blank"
-                        rel="noopener noreferrer">
-                        Goodreads
-                    </a>
-                    <a class="buy-button" href="https://www.amazon.com/dp/B0F84GQY3T?ref_=ast_author_mpb" target="_blank"
-                        rel="noopener noreferrer">
-                        Amazon
-                    </a>
-                    <a class="buy-button" href="https://app.thestorygraph.com/book_reviews/2d26d9f2-e0bd-481b-afa0-7554ad5dfce6"
-                        target="_blank" rel="noopener noreferrer">
-                        StoryGraph
-                    </a>
-                </div>
-
+                    <div class="cta-row">
+                        <a class="btn" href="https://www.goodreads.com/book/show/233662729-the-seeker-s-wrath"
+                            target="_blank" rel="noopener">Goodreads</a>
+                        <a class="btn btn-dark" href="https://www.amazon.com/dp/B0F84GQY3T?ref_=ast_author_mpb"
+                            target="_blank" rel="noopener">Amazon</a>
+                        <a class="btn btn-green"
+                            href="https://app.thestorygraph.com/book_reviews/2d26d9f2-e0bd-481b-afa0-7554ad5dfce6"
+                            target="_blank" rel="noopener">StoryGraph</a>
+                    </div>
                 </article>
 
-                <article class="news-entry center">
+                <!-- AN ENVIOUS GOD -->
+                <article class="news-entry dark center" aria-labelledby="aeg-heading">
                     <div class="title-panel">
-                    <img src="/images/books/the-essence-wars/TITLE%20ONLY.png" alt="AN ENVIOUS GOD — THE ESSENCE WARS"
-                        class="title-img" />
+                        <img src="/images/books/the-essence-wars/TITLE%20ONLY.png"
+                            alt="AN ENVIOUS GOD — THE ESSENCE WARS" class="title-img" />
                     </div>
-                    <h3>Coming 30 November — The Essence Wars: An Envious God</h3>
+
+                    <h3 id="aeg-heading">Coming 30 November — The Essence Wars: An Envious God</h3>
                     <p>Set six years after <em>The Seeker’s Wrath</em>, this new novel ventures east into Teloshka.
                         Follow Maerwyn Sawngfli and her warhound Braegor through a chilling tale of ambition, loyalty,
-                        and the price of power. Some familiar faces return. No one is safe.</p>
+                        and the price of power.</p>
                 </article>
 
-                <article class="news-entry">
-                    <h3>Want an early copy?</h3>
-                    <div class="callout">
-                        <p>I’m offering advance review copies. If you use Kindle, add
-                            <strong>p.s.davis@psdavisbooks.com</strong> to your approved senders, then email me your
-                            Kindle address and I’ll send the ARC.</p>
+                <!-- ARC CALLOUT -->
+                <article class="news-entry dark center" aria-labelledby="arc-heading">
+                    <h3 id="arc-heading">Want an early copy?</h3>
+                    <div class="callout dark news-entry">
+                        <p>If you use Kindle, add <strong>p.s.davis@psdavisbooks.com</strong> to your approved senders,
+                            then email your Kindle address and I’ll send the ARC.</p>
                         <p>Instructions: <a
                                 href="https://www.amazon.com/gp/help/customer/display.html?nodeId=GX9XLEVV8G4DB28H"
-                                target="_blank" rel="noopener noreferrer">How to add approved senders to Kindle</a></p>
-                        <p>No Kindle? I can arrange a Google Play code or a physical copy at cost plus postage. Piracy
-                            harms authors and readers. Thank you for helping protect the work.</p>
+                                target="_blank" rel="noopener">How to add approved senders to Kindle</a></p>
+                        <p>No Kindle? I can arrange a Google Play code or a physical copy at cost plus postage.</p>
                     </div>
                 </article>
             </section>
@@ -132,6 +128,6 @@
   }
   </script>
 
-    <script src="/js/includes.js"></script>
+    <script src="/js/includes.js" defer></script>
 </body>
 </html>
