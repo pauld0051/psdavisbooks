@@ -85,3 +85,15 @@
     top: 7px;
     /* Adjust as needed to match Amazon and Apple alignment */
 }
+
+/* Books2Read icon */
+.b2r-icon .icon {
+    -webkit-mask-image: url('/images/icons/b2r.svg');
+    mask-image: url('/images/icons/b2r.svg');
+}
+
+.b2r-tweak {
+    position: relative;
+    top: 7px;
+    /* adjust if needed to match visual alignment */
+}
