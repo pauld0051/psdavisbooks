@@ -45,3 +45,35 @@
     background-color: #f2e9da;
     color: #2b2b2b;
 }
+
+/* Fancy Blog Divider */
+.fancy-divider {
+    border: none;
+    height: 2px;
+    width: 100%;
+    margin: 3rem auto;
+    position: relative;
+    background: linear-gradient(to right, transparent, #6b563b, transparent);
+}
+
+.fancy-divider::before,
+.fancy-divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 14px;
+    height: 14px;
+    transform: translateY(-50%) rotate(45deg);
+    background: #6b563b;
+    opacity: 0.9;
+}
+
+.fancy-divider::before {
+    left: calc(50% - 20px);
+}
+
+.fancy-divider::after {
+    right: calc(50% - 20px);
+}
+
+/* End of Fancy Blog Divider */
