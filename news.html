@@ -48,6 +48,38 @@
 
     <title>P. S. Davis | News</title>
 </head>
+<script>
+    (function () {
+        function buildYouTubeIframe(videoId) {
+            var iframe = document.createElement('iframe');
+            iframe.className = 'yt-iframe';
+            iframe.src = 'https://www.youtube-nocookie.com/embed/' +
+                encodeURIComponent(videoId) +
+                '?autoplay=1&rel=0&modestbranding=1';
+            iframe.title = 'YouTube video player';
+            iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+            iframe.allowFullscreen = true;
+            iframe.loading = 'lazy';
+            return iframe;
+        }
+
+        document.querySelectorAll('.yt-consent-embed').forEach(function (embed) {
+            var button = embed.querySelector('.yt-poster-button');
+            if (!button) return;
+
+            button.addEventListener('click', function () {
+                if (embed.dataset.loaded === 'true') return;
+                embed.dataset.loaded = 'true';
+
+                var videoId = embed.getAttribute('data-video-id');
+                var iframe = buildYouTubeIframe(videoId);
+
+                button.replaceWith(iframe);
+            });
+        });
+    })();
+</script>
+
 <body>
     <div class="wrapper">
         <!-- Dynamic Header Include -->
@@ -56,6 +88,34 @@
         <main>
     <section class="news-container">
         <h2>Latest News</h2>
+
+        <article class="news-entry" id="tsw-video-review">
+            <h3>Video Review: <em>The Seeker’s Wrath</em></h3>
+        
+            <p>A video review of <em>The Seeker’s Wrath</em> is now live. Clicking the image below will load the video directly
+                from YouTube.</p>
+        
+            <div class="yt-consent-embed" data-video-id="nqcwYTiFU-0" aria-label="YouTube video review embed">
+        
+                <button type="button" class="yt-poster-button" aria-label="Load video review">
+                    <span class="yt-poster-image" role="img" aria-label="Video preview image"></span>
+                    <span class="yt-play-overlay" aria-hidden="true">▶</span>
+                </button>
+        
+                <div class="yt-actions">
+                    <a class="yt-direct-link" href="https://www.youtube.com/watch?v=nqcwYTiFU-0" target="_blank"
+                        rel="noopener noreferrer">
+                        Open on YouTube
+                    </a>
+                </div>
+                <p class="yt-live-note">
+                    Premieres January 22 at 17:00 UTC.
+                </p>
+                <p class="yt-note">
+                    This site does not load YouTube unless you choose to play the video.
+                </p>
+            </div>
+        </article>
 
         <article class="news-entry">
             <h3><em>An Envious God</em> Release Announcement</h3>
