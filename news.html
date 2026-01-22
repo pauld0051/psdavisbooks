@@ -48,37 +48,6 @@
 
     <title>P. S. Davis | News</title>
 </head>
-<script>
-    (function () {
-        function buildYouTubeIframe(videoId) {
-            var iframe = document.createElement('iframe');
-            iframe.className = 'yt-iframe';
-            iframe.src = 'https://www.youtube-nocookie.com/embed/' +
-                encodeURIComponent(videoId) +
-                '?autoplay=1&rel=0&modestbranding=1';
-            iframe.title = 'YouTube video player';
-            iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
-            iframe.allowFullscreen = true;
-            iframe.loading = 'lazy';
-            return iframe;
-        }
-
-        document.querySelectorAll('.yt-consent-embed').forEach(function (embed) {
-            var button = embed.querySelector('.yt-poster-button');
-            if (!button) return;
-
-            button.addEventListener('click', function () {
-                if (embed.dataset.loaded === 'true') return;
-                embed.dataset.loaded = 'true';
-
-                var videoId = embed.getAttribute('data-video-id');
-                var iframe = buildYouTubeIframe(videoId);
-
-                button.replaceWith(iframe);
-            });
-        });
-    })();
-</script>
 
 <body>
     <div class="wrapper">
@@ -109,7 +78,7 @@
                     </a>
                 </div>
                 <p class="yt-live-note">
-                    Premieres January 22 at 17:00 UTC.
+                    Premiered January 22 at 17:00 UTC.
                 </p>
                 <p class="yt-note">
                     This site does not load YouTube unless you choose to play the video.
@@ -194,6 +163,37 @@
 
     <!-- JavaScript -->
     <script src="js/includes.js"></script>
+    <script>
+        (function () {
+            function buildYouTubeIframe(videoId) {
+                var iframe = document.createElement('iframe');
+                iframe.className = 'yt-iframe';
+                iframe.src = 'https://www.youtube-nocookie.com/embed/' +
+                    encodeURIComponent(videoId) +
+                    '?autoplay=1&rel=0&modestbranding=1';
+                iframe.title = 'YouTube video player';
+                iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+                iframe.allowFullscreen = true;
+                iframe.loading = 'lazy';
+                return iframe;
+            }
+
+            document.querySelectorAll('.yt-consent-embed').forEach(function (embed) {
+                var button = embed.querySelector('.yt-poster-button');
+                if (!button) return;
+
+                button.addEventListener('click', function () {
+                    if (embed.dataset.loaded === 'true') return;
+                    embed.dataset.loaded = 'true';
+
+                    var videoId = embed.getAttribute('data-video-id');
+                    var iframe = buildYouTubeIframe(videoId);
+
+                    button.replaceWith(iframe);
+                });
+            });
+        })();
+    </script>
 
 </body>
 </html>
