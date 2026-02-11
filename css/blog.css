@@ -77,3 +77,9 @@
 }
 
 /* End of Fancy Blog Divider */
+
+.map-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
