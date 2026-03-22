@@ -83,3 +83,22 @@
     height: auto;
     display: block;
 }
+
+.blog-image-large {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.blog-image-large img {
+    display: block;
+    width: 100%;
+    max-width: 860px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+
+.blog-image-large .photo-note {
+    margin-top: 0.85rem;
+    font-size: 0.9rem;
+}
