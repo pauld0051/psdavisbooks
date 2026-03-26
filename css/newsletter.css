@@ -162,3 +162,16 @@ body {
         max-width: 92%;
     }
 }
+
+.news-entry-light {
+    background: #f3ede3;
+    color: #2b1a12;
+}
+
+.news-entry-light p,
+.news-entry-light em,
+.news-entry-light strong,
+.news-entry-light a,
+.news-entry-light li {
+    color: #2b1a12;
+}
