@@ -32,7 +32,7 @@ main {
     /* covers the whole viewport for the whole page */
     inset: 0;
     z-index: -2;
-    background-image: url("../images/Teloshka_image.png");
+    background-image: url("../images/books/the-anvil-and-the-throne/ads\ image.jpg");
     /* oversize to get that full-bleed dramatic look */
     background-size: 160% 160%;
     background-position: 50% 50%;

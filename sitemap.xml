@@ -1,159 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.psdavisbooks.com/about</loc>
+    <loc>https://psdavisbooks.com/</loc>
+    <lastmod>2026-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://psdavisbooks.com/about.html</loc>
     <lastmod>2025-05-21</lastmod>
   </url>
   <url>
-    <loc>https://www.psdavisbooks.com/blog-rejoice-book-club</loc>
+    <loc>https://psdavisbooks.com/blog.html</loc>
     <lastmod>2026-07-31</lastmod>
   </url>
   <url>
-    <loc>https://www.psdavisbooks.com/blog-teloshka-names-and-associations</loc>
-    <lastmod>2026-05-31</lastmod>
-  </url>
-  <url>
-    <loc>https://www.psdavisbooks.com/blog-ARCs-and-Beta-Reading</loc>
+    <loc>https://psdavisbooks.com/blog-ARCs-and-Beta-Reading.html</loc>
     <lastmod>2025-10-03</lastmod>
   </url>
   <url>
-    <loc>https://www.psdavisbooks.com/blog-inside-the-scam</loc>
+    <loc>https://psdavisbooks.com/blog-inside-the-scam.html</loc>
     <lastmod>2026-03-22</lastmod>
   </url>
   <url>
-    <loc>https://www.psdavisbooks.com/blog-pantser-vs-plotter</loc>
+    <loc>https://psdavisbooks.com/blog-pantser-vs-plotter.html</loc>
     <lastmod>2025-08-03</lastmod>
   </url>
   <url>
-    <loc>https://www.psdavisbooks.com/blog-pronouncing-teloshka</loc>
+    <loc>https://psdavisbooks.com/blog-pronouncing-teloshka.html</loc>
     <lastmod>2026-02-11</lastmod>
   </url>
   <url>
-    <loc>https://www.psdavisbooks.com/blog-scams-on-facebook</loc>
-    <lastmod>2025-06-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.psdavisbooks.com/blog-teaching-physics-in-a-fantasy-world</loc>
-    <lastmod>2025-10-26</lastmod>
-  </url>
-  <url>
-    <loc>https://www.psdavisbooks.com/blog-the-ashes-of-saint-teymorins-garden</loc>
-    <lastmod>2025-12-06</lastmod>
-  </url>
-  <url>
-    <loc>https://www.psdavisbooks.com/blog-the-new-sheriff-in-town</loc>
-    <lastmod>2025-07-06</lastmod>
-  </url>
-  <url>
-    <loc>https://www.psdavisbooks.com/blog-write-what-you-know</loc>
-    <lastmod>2025-09-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.psdavisbooks.com/blog</loc>
+    <loc>https://psdavisbooks.com/blog-regions-of-teloshka.html</loc>
     <lastmod>2026-05-31</lastmod>
   </url>
   <url>
-    <loc>https://www.psdavisbooks.com/blood-revenge</loc>
-    <lastmod>2025-11-21</lastmod>
+    <loc>https://psdavisbooks.com/blog-rejoice-book-club.html</loc>
+    <lastmod>2026-07-31</lastmod>
   </url>
   <url>
-    <loc>https://www.psdavisbooks.com/contact</loc>
-    <lastmod>2025-10-31</lastmod>
+    <loc>https://psdavisbooks.com/blog-scams-on-facebook.html</loc>
+    <lastmod>2025-06-10</lastmod>
   </url>
   <url>
-    <loc>https://www.psdavisbooks.com/daughter-of-fire-and-storm</loc>
-    <lastmod>2025-05-21</lastmod>
+    <loc>https://psdavisbooks.com/blog-teaching-physics-in-a-fantasy-world.html</loc>
+    <lastmod>2025-10-26</lastmod>
   </url>
   <url>
-    <loc>https://www.psdavisbooks.com/events</loc>
-    <lastmod>2025-10-05</lastmod>
+    <loc>https://psdavisbooks.com/blog-teloshka-names-and-associations.html</loc>
+    <lastmod>2026-05-31</lastmod>
   </url>
   <url>
-    <loc>https://www.psdavisbooks.com/gate-in-the-shadows</loc>
-    <lastmod>2025-08-04</lastmod>
-  </url>
-  <url>
-    <loc>https://www.psdavisbooks.com/includes/footer</loc>
-    <lastmod>2025-11-04</lastmod>
-  </url>
-  <url>
-    <loc>https://www.psdavisbooks.com/includes/header</loc>
-    <lastmod>2026-03-27</lastmod>
-  </url>
-  <url>
-    <loc>https://www.psdavisbooks.com/</loc>
-    <lastmod>2026-03-27</lastmod>
-  </url>
-  <url>
-    <loc>https://www.psdavisbooks.com/maps</loc>
-    <lastmod>2025-05-21</lastmod>
-  </url>
-  <url>
-    <loc>https://www.psdavisbooks.com/marketing</loc>
-    <lastmod>2025-11-01</lastmod>
-  </url>
-  <url>
-    <loc>https://www.psdavisbooks.com/moon-child-united-with-the-stone</loc>
-    <lastmod>2025-05-21</lastmod>
-  </url>
-  <url>
-    <loc>https://www.psdavisbooks.com/news</loc>
-    <lastmod>2026-03-26</lastmod>
-  </url>
-  <url>
-    <loc>https://www.psdavisbooks.com/newsletter-dec-2025</loc>
-    <lastmod>2025-12-01</lastmod>
-  </url>
-  <url>
-    <loc>https://www.psdavisbooks.com/newsletter-mar-2026</loc>
-    <lastmod>2026-03-26</lastmod>
-  </url>
-  <url>
-    <loc>https://www.psdavisbooks.com/newsletter-nov-2025</loc>
-    <lastmod>2025-11-11</lastmod>
-  </url>
-  <url>
-    <loc>https://www.psdavisbooks.com/privacy-policy</loc>
-    <lastmod>2025-10-03</lastmod>
-  </url>
-  <url>
-    <loc>https://www.psdavisbooks.com/shadow-state</loc>
-    <lastmod>2025-05-21</lastmod>
-  </url>
-  <url>
-    <loc>https://www.psdavisbooks.com/shop</loc>
-    <lastmod>2025-05-21</lastmod>
-  </url>
-  <url>
-    <loc>https://www.psdavisbooks.com/thank-you</loc>
-    <lastmod>2025-10-03</lastmod>
-  </url>
-  <url>
-    <loc>https://www.psdavisbooks.com/the-book-of-strands-and-stones</loc>
-    <lastmod>2025-05-21</lastmod>
-  </url>
-  <url>
-    <loc>https://www.psdavisbooks.com/the-essence-wars-book-one</loc>
-    <lastmod>2026-03-16</lastmod>
-  </url>
-  <url>
-    <loc>https://www.psdavisbooks.com/the-excalibur-vow</loc>
-    <lastmod>2025-05-21</lastmod>
-  </url>
-  <url>
-    <loc>https://www.psdavisbooks.com/the-seekers-wrath</loc>
+    <loc>https://psdavisbooks.com/blog-the-ashes-of-saint-teymorins-garden.html</loc>
     <lastmod>2025-12-06</lastmod>
   </url>
   <url>
-    <loc>https://www.psdavisbooks.com/the-white-beast-of-trie</loc>
-    <lastmod>2026-03-26</lastmod>
+    <loc>https://psdavisbooks.com/blog-the-new-sheriff-in-town.html</loc>
+    <lastmod>2025-07-06</lastmod>
   </url>
   <url>
-    <loc>https://www.psdavisbooks.com/unlicensed</loc>
+    <loc>https://psdavisbooks.com/blog-write-what-you-know.html</loc>
+    <lastmod>2025-09-17</lastmod>
+  </url>
+  <url>
+    <loc>https://psdavisbooks.com/blood-revenge.html</loc>
+    <lastmod>2025-11-21</lastmod>
+  </url>
+  <url>
+    <loc>https://psdavisbooks.com/contact.html</loc>
+    <lastmod>2025-10-31</lastmod>
+  </url>
+  <url>
+    <loc>https://psdavisbooks.com/daughter-of-fire-and-storm.html</loc>
     <lastmod>2025-05-21</lastmod>
   </url>
   <url>
-    <loc>https://www.psdavisbooks.com/www/</loc>
-    <lastmod>2025-05-05</lastmod>
+    <loc>https://psdavisbooks.com/events.html</loc>
+    <lastmod>2026-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://psdavisbooks.com/gate-in-the-shadows.html</loc>
+    <lastmod>2025-08-04</lastmod>
+  </url>
+  <url>
+    <loc>https://psdavisbooks.com/maps.html</loc>
+    <lastmod>2025-05-21</lastmod>
+  </url>
+  <url>
+    <loc>https://psdavisbooks.com/marketing.html</loc>
+    <lastmod>2025-11-01</lastmod>
+  </url>
+  <url>
+    <loc>https://psdavisbooks.com/moon-child-united-with-the-stone.html</loc>
+    <lastmod>2025-05-21</lastmod>
+  </url>
+  <url>
+    <loc>https://psdavisbooks.com/news.html</loc>
+    <lastmod>2026-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://psdavisbooks.com/newsletter-aug-2026.html</loc>
+    <lastmod>2026-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://psdavisbooks.com/newsletter-dec-2025.html</loc>
+    <lastmod>2025-12-01</lastmod>
+  </url>
+  <url>
+    <loc>https://psdavisbooks.com/newsletter-mar-2026.html</loc>
+    <lastmod>2026-03-26</lastmod>
+  </url>
+  <url>
+    <loc>https://psdavisbooks.com/newsletter-nov-2025.html</loc>
+    <lastmod>2025-11-11</lastmod>
+  </url>
+  <url>
+    <loc>https://psdavisbooks.com/privacy-policy.html</loc>
+    <lastmod>2025-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://psdavisbooks.com/shadow-state.html</loc>
+    <lastmod>2025-05-21</lastmod>
+  </url>
+  <url>
+    <loc>https://psdavisbooks.com/shop.html</loc>
+    <lastmod>2025-05-21</lastmod>
+  </url>
+  <url>
+    <loc>https://psdavisbooks.com/the-book-of-strands-and-stones.html</loc>
+    <lastmod>2025-05-21</lastmod>
+  </url>
+  <url>
+    <loc>https://psdavisbooks.com/the-essence-wars-book-one.html</loc>
+    <lastmod>2026-03-16</lastmod>
+  </url>
+  <url>
+    <loc>https://psdavisbooks.com/the-essence-wars-book-two.html</loc>
+    <lastmod>2026-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://psdavisbooks.com/the-excalibur-vow.html</loc>
+    <lastmod>2025-05-21</lastmod>
+  </url>
+  <url>
+    <loc>https://psdavisbooks.com/the-seekers-wrath.html</loc>
+    <lastmod>2025-12-06</lastmod>
+  </url>
+  <url>
+    <loc>https://psdavisbooks.com/the-white-beast-of-trie.html</loc>
+    <lastmod>2026-03-26</lastmod>
+  </url>
+  <url>
+    <loc>https://psdavisbooks.com/unlicensed.html</loc>
+    <lastmod>2025-05-21</lastmod>
   </url>
 </urlset>
