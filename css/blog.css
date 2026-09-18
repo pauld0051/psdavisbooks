@@ -103,7 +103,8 @@
     font-size: 0.9rem;
 }
 
-.article-update {
+.article-update,
+.article-note {
     margin: 2rem 0;
     padding: 1rem 1.25rem;
     border-left: 4px solid #8a6a32;
